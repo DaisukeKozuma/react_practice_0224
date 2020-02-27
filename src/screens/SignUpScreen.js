@@ -1,17 +1,17 @@
 import React from 'react';
 import { StyleSheet, View, TextInput, Text, TouchableHighlight } from 'react-native';
 
-class LoginScreen extends React.Component {
+class SignUpScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
                 <Text style={styles.title}>
-                    ログイン
+                    新規会員登録
                     </Text>
                 <TextInput style={styles.input} value="Maildress" />
                 <TextInput style={styles.input} value="Password" />
                 <TouchableHighlight style={styles.button} onPress={() => { }} underlayColor="#A1DDB9">
-                    <Text style={styles.buttonTitle}>ログインする</Text>
+                    <Text style={styles.buttonTitle}>送信する</Text>
                 </TouchableHighlight>
             </View>
         );
@@ -57,4 +57,4 @@ const styles = StyleSheet.create({
 
 
 
-export default LoginScreen;
+export default SignUpScreen;
